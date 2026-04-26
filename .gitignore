@@ -1,0 +1,2 @@
+# Exclude oversized file (135MB — exceeds GitHub's 100MB limit)
+CountryBallsGoldenEra/CountryBallsGoldenEra-Interior.pdf

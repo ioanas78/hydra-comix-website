@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About the Author — HydraComix</title>
+  <meta name="description" content="Meet David Alexandru, the young author and designer behind the Country Balls comic book series." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Navbar ── -->
+  <nav class="navbar">
+    <a class="nav-logo" href="index.html">
+      <img src="HydraComix-logo.jpg" alt="HydraComix logo" />
+      <span class="nav-logo-text">HydraComix</span>
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" data-i18n="nav.books">Books</a></li>
+      <li><a href="golden-era.html" data-i18n="nav.goldenEra">Golden Era</a></li>
+      <li><a href="about.html" class="active" data-i18n="nav.about">About</a></li>
+    </ul>
+
+    <!-- Language dropdown -->
+    <div class="lang-dropdown">
+      <button class="lang-btn" onclick="toggleLangDropdown()" aria-label="Select language">
+        <span id="lang-btn-label">🇬🇧 English</span>
+        <span class="chevron">▼</span>
+      </button>
+      <div class="lang-menu" role="listbox">
+        <div class="lang-option active" data-lang="en" role="option">🇬🇧 English</div>
+        <div class="lang-option coming-soon" data-lang="fr" role="option">🇫🇷 Français <span class="coming-soon-tag" data-i18n="lang.comingSoon">soon</span></div>
+        <div class="lang-option coming-soon" data-lang="de" role="option">🇩🇪 Deutsch <span class="coming-soon-tag" data-i18n="lang.comingSoon">soon</span></div>
+        <div class="lang-option coming-soon" data-lang="ro" role="option">🇷🇴 Română <span class="coming-soon-tag" data-i18n="lang.comingSoon">soon</span></div>
+      </div>
+    </div>
+
+    <button class="hamburger" onclick="toggleMobileNav()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── About Hero ── -->
+  <section class="about-hero">
+    <h1 class="page-title" data-i18n="about.title">About the Author</h1>
+    <p class="page-subtitle" data-i18n="about.subtitle">The mind behind Country Balls</p>
+  </section>
+
+  <!-- ── Author Content ── -->
+  <main class="about-content">
+
+    <div class="about-text-box">
+
+      <p>
+        <strong>David Alexandru</strong> — a primary school boy living in the UK — is the mastermind
+        who wrote and designed the <strong>Country Balls</strong> comic book series.
+      </p>
+
+      <p>
+        His collection of comics features personified national flags depicted as spherical characters
+        known as <strong>Country Balls</strong>, experiencing chaotic adventures involving
+        time travel, extraterrestrial invasions, and global conflicts.
+      </p>
+
+      <p>
+        He was 10 years old when he wrote his first comic called <strong>"Country Balls"</strong>,
+        followed by <strong>"Country Balls Return"</strong> and <strong>"Country Balls Heroes"</strong>.
+      </p>
+
+      <p>
+        <strong>"Country Balls Golden Era"</strong> is a 15-chapter collection that gathers the
+        wildest comic adventures combining the content of his three books — all in one volume.
+      </p>
+
+      <p>
+        At <strong>11 years old</strong> he authored <strong>"Country Balls Mania"</strong>.
+      </p>
+
+      <p>
+        Throughout the series, the author utilises humour and personification to illustrate historical
+        rivalries, sporting events, and imaginative adventures. The visual style is characterised by
+        vibrant colours and simple dialogue bubbles to convey action and suspense within each short story.
+      </p>
+
+    </div>
+
+    <!-- Back to books -->
+    <div style="text-align:center; margin-top:48px;">
+      <a href="index.html#books" class="hero-cta">See the Books</a>
+    </div>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer-logo-text">HydraComix</div>
+    <p class="footer-tagline" data-i18n="footer.tagline">Written and Designed by David Alexandru</p>
+    <p class="footer-copy" data-i18n="footer.copyright">© 2026 HydraComix. All rights reserved.</p>
+  </footer>
+
+  <script src="i18n.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "books": "Books",
+    "goldenEra": "Golden Era",
+    "about": "About"
+  },
+  "hero": {
+    "title": "HydraComix",
+    "subtitle": "Comics by a kid, for kids",
+    "cta": "Explore the Collection"
+  },
+  "books": {
+    "sectionTitle": "The Collection",
+    "descPlaceholder": "Description coming soon...",
+    "buyButton": "Buy on Amazon",
+    "featuredBadge": "Featured"
+  },
+  "about": {
+    "title": "About the Author",
+    "subtitle": "The mind behind Country Balls"
+  },
+  "goldenEra": {
+    "title": "Country Balls Golden Era",
+    "tagline": "The Ultimate Collection — 15 Chapters of Epic Adventure",
+    "meta": "Written & Designed by David Alexandru",
+    "videoTitle": "Watch the Trailer",
+    "chaptersTitle": "Inside the Book",
+    "chapterLabel": "Chapter",
+    "buyButton": "Get Your Copy on Amazon"
+  },
+  "footer": {
+    "tagline": "Written and Designed by David Alexandru",
+    "copyright": "© 2026 HydraComix. All rights reserved."
+  },
+  "lang": {
+    "comingSoon": "soon"
+  }
+}
