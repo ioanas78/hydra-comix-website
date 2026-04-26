@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HydraComix — Country Balls Comic Series</title>
   <meta name="description" content="HydraComix — comic books written and designed by David Alexandru. Featuring the Country Balls series: laugh-out-loud adventures with personified national flags." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- ── Navbar ── -->
   <nav class="navbar">
-    <a class="nav-logo" href="index.html">
-      <img src="HydraComix-logo.jpg" alt="HydraComix logo" />
-      <span class="nav-logo-text">HydraComix</span>
-    </a>
+    <a class="nav-brand" href="index.html">Hydra<span>Comix</span></a>
 
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html" class="active" data-i18n="nav.books">Books</a></li>
@@ -44,118 +43,122 @@
 
   <!-- ── Hero ── -->
   <section class="hero">
-    <div class="hero-content">
-      <div style="display:flex;align-items:center;justify-content:center;gap:24px;margin-bottom:12px;">
-        <img class="hero-logo" style="margin:0;animation:none;" src="HydraComix-logo.jpg" alt="HydraComix" />
-        <h1 class="hero-title" style="margin:0;" data-i18n="hero.title">HydraComix</h1>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
-          <div class="starburst">LAUGHS!</div>
-          <div class="starburst">FUN!</div>
-          <div class="starburst">ACTION!</div>
-          <div class="starburst">SUSPENSE!</div>
-        </div>
+    <div class="hero-left">
+      <div class="hero-eyebrow">Comics for Kids · Ages 8+</div>
+      <h1 class="hero-title">
+        HYDRA<br/><span class="pink">COMIX</span>
+      </h1>
+      <p class="hero-sub" data-i18n="hero.subtitle">Comics by a kid, for kids</p>
+      <div class="hero-cta-row">
+        <a class="btn btn-primary" href="#books">See All Books</a>
+        <a class="btn btn-secondary" href="golden-era.html">Golden Era</a>
       </div>
-      <p class="hero-subtitle" data-i18n="hero.subtitle">Comics by a kid, for kids</p>
-
+    </div>
+    <div class="hero-right">
+      <img src="front covers/CountryBalls Golden Era - front cover.png" alt="Country Balls Golden Era" />
+      <div class="hero-right-badge">★ NOW AVAILABLE ON AMAZON ★</div>
     </div>
   </section>
 
+  <!-- ── Dot strip decoration ── -->
+  <div class="dot-strip"></div>
+
   <!-- ── Books Section ── -->
-  <section id="books">
-    <div class="section">
-      <h2 class="section-title" data-i18n="books.sectionTitle">The Collection</h2>
-      <div class="section-divider"></div>
-
-      <div class="books-grid">
-
-        <!-- Book 1: Country Balls -->
-        <article class="book-card">
-          <div class="book-cover-wrap">
-            <img src="front covers/CountryBalls - front cover.png" alt="Country Balls book cover" loading="lazy" />
-          </div>
-          <div class="book-info">
-            <h3 class="book-title comic-font">Country Balls</h3>
-            <p class="book-desc">Ever wondered what would happen if the entire world turned into round, bouncy balls with major attitude problems? Welcome to COUNTRY BALLS, the ultimate collection of wild stories.<br><br>Whether they are fighting over fishing spots, surviving detention, or discovering dragons in deep space, these Country Balls are never boring. Perfect for kids aged 8+ who want non-stop laughs, suspense, and action!</p>
-            <a class="btn-amazon"
-               href="https://www.amazon.co.uk/Country-Balls-David-Alexandru/dp/B0DRYSM7GJ/"
-               target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39.025.293.226-.236.506-1.136 1.308-2.693 2.406-1.555 1.1-3.3 1.65-5.234 1.65-2.007 0-3.87-.527-5.585-1.583-1.715-1.055-2.955-2.345-3.72-3.873-.08-.156-.056-.28.052-.388.108-.108.228-.176.614-.716zM6.523 11.19c0 .87.23 1.568.687 2.088.457.52 1.063.78 1.816.78.758 0 1.387-.267 1.89-.804.503-.536.755-1.25.755-2.138 0-.886-.248-1.596-.745-2.13-.497-.534-1.117-.8-1.86-.8-.736 0-1.352.27-1.848.806-.496.537-.695 1.233-.695 2.198zm4.888 5.97c-.09-.27-.027-.508.138-.555 1.37-.363 2.562-1.017 3.578-1.96 1.016-.944 1.74-2.057 2.173-3.34.147-.434.384-.522.714-.266l2.093 1.585c.28.21.322.453.127.727-1.188 1.674-2.723 2.946-4.608 3.816-1.886.87-3.9 1.307-6.046 1.307-.296 0-.522-.088-.676-.265-.155-.176-.16-.367-.014-.57.28-.396.615-.77 1.003-1.123a9.82 9.82 0 0 0 1.518-1.356zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6C6.48 21.6 2.4 17.52 2.4 12S6.48 2.4 12 2.4 21.6 6.48 21.6 12 17.52 21.6 12 21.6z"/></svg>
-              <span data-i18n="books.buyButton">Buy on Amazon</span>
-            </a>
-          </div>
-        </article>
-
-        <!-- Book 2: Country Balls Return -->
-        <article class="book-card">
-          <div class="book-cover-wrap">
-            <img src="front covers/CountryBalls Return - front cover.png" alt="Country Balls Return book cover" loading="lazy" />
-          </div>
-          <div class="book-info">
-            <h3 class="book-title comic-font">Country Balls Return</h3>
-            <p class="book-desc">The world's roundest heroes face total madness! Poland survives inter-dimensional portals, dragon battles, and a very awkward love triangle. Italy gets possessed by a demon at a spooky castle — saved only by loud music. Greece encounters a terrifying underwater monster, and the Skull King launches a demon invasion while the UN argues. To save the day, the countries must merge into one giant super-unit and throw the planet Mercury at their enemies!</p>
-            <a class="btn-amazon"
-               href="https://www.amazon.co.uk/Country-Balls-Return/dp/B0DSSZMV83/"
-               target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39.025.293.226-.236.506-1.136 1.308-2.693 2.406-1.555 1.1-3.3 1.65-5.234 1.65-2.007 0-3.87-.527-5.585-1.583-1.715-1.055-2.955-2.345-3.72-3.873-.08-.156-.056-.28.052-.388.108-.108.228-.176.614-.716zM6.523 11.19c0 .87.23 1.568.687 2.088.457.52 1.063.78 1.816.78.758 0 1.387-.267 1.89-.804.503-.536.755-1.25.755-2.138 0-.886-.248-1.596-.745-2.13-.497-.534-1.117-.8-1.86-.8-.736 0-1.352.27-1.848.806-.496.537-.695 1.233-.695 2.198zm4.888 5.97c-.09-.27-.027-.508.138-.555 1.37-.363 2.562-1.017 3.578-1.96 1.016-.944 1.74-2.057 2.173-3.34.147-.434.384-.522.714-.266l2.093 1.585c.28.21.322.453.127.727-1.188 1.674-2.723 2.946-4.608 3.816-1.886.87-3.9 1.307-6.046 1.307-.296 0-.522-.088-.676-.265-.155-.176-.16-.367-.014-.57.28-.396.615-.77 1.003-1.123a9.82 9.82 0 0 0 1.518-1.356zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6C6.48 21.6 2.4 17.52 2.4 12S6.48 2.4 12 2.4 21.6 6.48 21.6 12 17.52 21.6 12 21.6z"/></svg>
-              <span data-i18n="books.buyButton">Buy on Amazon</span>
-            </a>
-          </div>
-        </article>
-
-        <!-- Book 3: Country Balls Heroes -->
-        <article class="book-card">
-          <div class="book-cover-wrap">
-            <img src="front covers/CountryBalls Heroes - front cover.png" alt="Country Balls Heroes book cover" loading="lazy" />
-          </div>
-          <div class="book-info">
-            <h3 class="book-title comic-font">Country Balls Heroes</h3>
-            <p class="book-desc">Forget everything you know about countries — these balls are Forces of Nature! When a comet hits Earth, it brings Chaos: a tiny squid turned cosmic super-villain. After escaping S.O.S.I. and chugging bottled black hole juice, Chaos hunts the Dragon Crowns to rule the galaxy. Team Chaos (featuring a traitorous Darkness) vs. Team Peace (who really need to stop arguing). Can they survive a five-hour rocket ride of pure "BRUH" and stop the black hole cannon? Expect epic space battles, secret lab escapes, "predictable" villains, and endless PEEKABOOs!</p>
-            <a class="btn-amazon"
-               href="https://www.amazon.co.uk/Country-Balls-Heroes/dp/B0DWKBCD7X/"
-               target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39.025.293.226-.236.506-1.136 1.308-2.693 2.406-1.555 1.1-3.3 1.65-5.234 1.65-2.007 0-3.87-.527-5.585-1.583-1.715-1.055-2.955-2.345-3.72-3.873-.08-.156-.056-.28.052-.388.108-.108.228-.176.614-.716zM6.523 11.19c0 .87.23 1.568.687 2.088.457.52 1.063.78 1.816.78.758 0 1.387-.267 1.89-.804.503-.536.755-1.25.755-2.138 0-.886-.248-1.596-.745-2.13-.497-.534-1.117-.8-1.86-.8-.736 0-1.352.27-1.848.806-.496.537-.695 1.233-.695 2.198zm4.888 5.97c-.09-.27-.027-.508.138-.555 1.37-.363 2.562-1.017 3.578-1.96 1.016-.944 1.74-2.057 2.173-3.34.147-.434.384-.522.714-.266l2.093 1.585c.28.21.322.453.127.727-1.188 1.674-2.723 2.946-4.608 3.816-1.886.87-3.9 1.307-6.046 1.307-.296 0-.522-.088-.676-.265-.155-.176-.16-.367-.014-.57.28-.396.615-.77 1.003-1.123a9.82 9.82 0 0 0 1.518-1.356zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6C6.48 21.6 2.4 17.52 2.4 12S6.48 2.4 12 2.4 21.6 6.48 21.6 12 17.52 21.6 12 21.6z"/></svg>
-              <span data-i18n="books.buyButton">Buy on Amazon</span>
-            </a>
-          </div>
-        </article>
-
-        <!-- Book 4: Country Balls Golden Era (featured) -->
-        <article class="book-card featured">
-          <div class="book-cover-wrap">
-            <img src="front covers/CountryBalls Golden Era - front cover.png" alt="Country Balls Golden Era book cover" loading="lazy" />
-            <span class="featured-badge" data-i18n="books.featuredBadge">Featured</span>
-          </div>
-          <div class="book-info">
-            <h3 class="book-title comic-font">Country Balls Golden Era</h3>
-            <p class="book-desc">The ultimate collection of round heroes, cranky dragons, and "yapping" countries! A 15-chapter extravaganza gathering the wildest adventures by David Alexandru — combining Country Balls, Country Balls Return, and Country Balls Heroes all in one volume. Perfect for kids aged 8+ who prefer their history with a side of hilarious chaos!</p>
-            <a class="btn-amazon"
-               href="https://www.amazon.co.uk/Country-Balls-Golden-Era/dp/B0DZVQ4DCX/"
-               target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39.025.293.226-.236.506-1.136 1.308-2.693 2.406-1.555 1.1-3.3 1.65-5.234 1.65-2.007 0-3.87-.527-5.585-1.583-1.715-1.055-2.955-2.345-3.72-3.873-.08-.156-.056-.28.052-.388.108-.108.228-.176.614-.716zM6.523 11.19c0 .87.23 1.568.687 2.088.457.52 1.063.78 1.816.78.758 0 1.387-.267 1.89-.804.503-.536.755-1.25.755-2.138 0-.886-.248-1.596-.745-2.13-.497-.534-1.117-.8-1.86-.8-.736 0-1.352.27-1.848.806-.496.537-.695 1.233-.695 2.198zm4.888 5.97c-.09-.27-.027-.508.138-.555 1.37-.363 2.562-1.017 3.578-1.96 1.016-.944 1.74-2.057 2.173-3.34.147-.434.384-.522.714-.266l2.093 1.585c.28.21.322.453.127.727-1.188 1.674-2.723 2.946-4.608 3.816-1.886.87-3.9 1.307-6.046 1.307-.296 0-.522-.088-.676-.265-.155-.176-.16-.367-.014-.57.28-.396.615-.77 1.003-1.123a9.82 9.82 0 0 0 1.518-1.356zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6C6.48 21.6 2.4 17.52 2.4 12S6.48 2.4 12 2.4 21.6 6.48 21.6 12 17.52 21.6 12 21.6z"/></svg>
-              <span data-i18n="books.buyButton">Buy on Amazon</span>
-            </a>
-          </div>
-        </article>
-
-        <!-- Book 5: Country Balls Mania -->
-        <article class="book-card">
-          <div class="book-cover-wrap">
-            <img src="front covers/CountryBalls Mania - front cover.png" alt="Country Balls Mania book cover" loading="lazy" />
-          </div>
-          <div class="book-info">
-            <h3 class="book-title comic-font">Country Balls Mania</h3>
-            <p class="book-desc">Get ready for global chaos, time-traveling shenanigans, and total "yapping"! This 5-chapter adventure is packed with more action and laughs than a science fair gone wrong.</p>
-            <a class="btn-amazon"
-               href="https://www.amazon.co.uk/Country-Balls-Mania-David-Alexandru/dp/B0GJPTJBG5/"
-               target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39.025.293.226-.236.506-1.136 1.308-2.693 2.406-1.555 1.1-3.3 1.65-5.234 1.65-2.007 0-3.87-.527-5.585-1.583-1.715-1.055-2.955-2.345-3.72-3.873-.08-.156-.056-.28.052-.388.108-.108.228-.176.614-.716zM6.523 11.19c0 .87.23 1.568.687 2.088.457.52 1.063.78 1.816.78.758 0 1.387-.267 1.89-.804.503-.536.755-1.25.755-2.138 0-.886-.248-1.596-.745-2.13-.497-.534-1.117-.8-1.86-.8-.736 0-1.352.27-1.848.806-.496.537-.695 1.233-.695 2.198zm4.888 5.97c-.09-.27-.027-.508.138-.555 1.37-.363 2.562-1.017 3.578-1.96 1.016-.944 1.74-2.057 2.173-3.34.147-.434.384-.522.714-.266l2.093 1.585c.28.21.322.453.127.727-1.188 1.674-2.723 2.946-4.608 3.816-1.886.87-3.9 1.307-6.046 1.307-.296 0-.522-.088-.676-.265-.155-.176-.16-.367-.014-.57.28-.396.615-.77 1.003-1.123a9.82 9.82 0 0 0 1.518-1.356zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6C6.48 21.6 2.4 17.52 2.4 12S6.48 2.4 12 2.4 21.6 6.48 21.6 12 17.52 21.6 12 21.6z"/></svg>
-              <span data-i18n="books.buyButton">Buy on Amazon</span>
-            </a>
-          </div>
-        </article>
-
-      </div><!-- /books-grid -->
+  <section class="books-section" id="books">
+    <div class="books-header">
+      <h2 class="books-title" data-i18n="books.sectionTitle">The Collection</h2>
+      <span class="books-count">5 BOOKS</span>
     </div>
+
+    <div class="books-grid">
+
+      <!-- Book 1: Country Balls -->
+      <article class="book-card">
+        <div class="book-cover">
+          <img src="front covers/CountryBalls - front cover.png" alt="Country Balls book cover" loading="lazy" />
+        </div>
+        <div class="book-body">
+          <h3 class="book-title">Country Balls</h3>
+          <p class="book-desc">Wild stories of round, bouncy nations with major attitude problems. Fishing spots, detention, dragons in deep space.</p>
+          <a class="btn-amazon"
+             href="https://www.amazon.co.uk/Country-Balls-David-Alexandru/dp/B0DRYSM7GJ/"
+             target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39.025.293.226-.236.506-1.136 1.308-2.693 2.406-1.555 1.1-3.3 1.65-5.234 1.65-2.007 0-3.87-.527-5.585-1.583-1.715-1.055-2.955-2.345-3.72-3.873-.08-.156-.056-.28.052-.388zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6C6.48 21.6 2.4 17.52 2.4 12S6.48 2.4 12 2.4 21.6 6.48 21.6 12 17.52 21.6 12 21.6z"/></svg>
+            <span data-i18n="books.buyButton">Buy on Amazon</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Book 2: Country Balls Return -->
+      <article class="book-card">
+        <div class="book-cover">
+          <img src="front covers/CountryBalls Return - front cover.png" alt="Country Balls Return book cover" loading="lazy" />
+        </div>
+        <div class="book-body">
+          <h3 class="book-title">Country Balls Return</h3>
+          <p class="book-desc">Inter-dimensional portals, demon possessions, and a giant super-unit saving Earth.</p>
+          <a class="btn-amazon"
+             href="https://www.amazon.co.uk/Country-Balls-Return/dp/B0DSSZMV83/"
+             target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39.025.293.226-.236.506-1.136 1.308-2.693 2.406-1.555 1.1-3.3 1.65-5.234 1.65-2.007 0-3.87-.527-5.585-1.583-1.715-1.055-2.955-2.345-3.72-3.873-.08-.156-.056-.28.052-.388zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6C6.48 21.6 2.4 17.52 2.4 12S6.48 2.4 12 2.4 21.6 6.48 21.6 12 17.52 21.6 12 21.6z"/></svg>
+            <span data-i18n="books.buyButton">Buy on Amazon</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Book 3: Country Balls Heroes -->
+      <article class="book-card">
+        <div class="book-cover">
+          <img src="front covers/CountryBalls Heroes - front cover.png" alt="Country Balls Heroes book cover" loading="lazy" />
+        </div>
+        <div class="book-body">
+          <h3 class="book-title">Country Balls Heroes</h3>
+          <p class="book-desc">Cosmic super-villain on the loose. Epic space battles, black holes, and endless PEEKABOOs.</p>
+          <a class="btn-amazon"
+             href="https://www.amazon.co.uk/Country-Balls-Heroes/dp/B0DWKBCD7X/"
+             target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39.025.293.226-.236.506-1.136 1.308-2.693 2.406-1.555 1.1-3.3 1.65-5.234 1.65-2.007 0-3.87-.527-5.585-1.583-1.715-1.055-2.955-2.345-3.72-3.873-.08-.156-.056-.28.052-.388zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6C6.48 21.6 2.4 17.52 2.4 12S6.48 2.4 12 2.4 21.6 6.48 21.6 12 17.52 21.6 12 21.6z"/></svg>
+            <span data-i18n="books.buyButton">Buy on Amazon</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Book 4: Country Balls Golden Era (featured) -->
+      <article class="book-card featured">
+        <div class="book-cover">
+          <img src="front covers/CountryBalls Golden Era - front cover.png" alt="Country Balls Golden Era book cover" loading="lazy" />
+          <span class="featured-badge" data-i18n="books.featuredBadge">Complete Edition</span>
+        </div>
+        <div class="book-body">
+          <h3 class="book-title">Country Balls Golden Era</h3>
+          <p class="book-desc">All three volumes in one epic 15-chapter collection. The definitive Country Balls experience.</p>
+          <a class="btn-amazon"
+             href="https://www.amazon.co.uk/Country-Balls-Golden-Era/dp/B0DZVQ4DCX/"
+             target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39.025.293.226-.236.506-1.136 1.308-2.693 2.406-1.555 1.1-3.3 1.65-5.234 1.65-2.007 0-3.87-.527-5.585-1.583-1.715-1.055-2.955-2.345-3.72-3.873-.08-.156-.056-.28.052-.388zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6C6.48 21.6 2.4 17.52 2.4 12S6.48 2.4 12 2.4 21.6 6.48 21.6 12 17.52 21.6 12 21.6z"/></svg>
+            <span data-i18n="books.buyButton">Buy on Amazon</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Book 5: Country Balls Mania -->
+      <article class="book-card">
+        <div class="book-cover">
+          <img src="front covers/CountryBalls Mania - front cover.png" alt="Country Balls Mania book cover" loading="lazy" />
+        </div>
+        <div class="book-body">
+          <h3 class="book-title">Country Balls Mania</h3>
+          <p class="book-desc">Time travel, global chaos, and a science fair gone spectacularly wrong.</p>
+          <a class="btn-amazon"
+             href="https://www.amazon.co.uk/Country-Balls-Mania-David-Alexandru/dp/B0GJPTJBG5/"
+             target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39.025.293.226-.236.506-1.136 1.308-2.693 2.406-1.555 1.1-3.3 1.65-5.234 1.65-2.007 0-3.87-.527-5.585-1.583-1.715-1.055-2.955-2.345-3.72-3.873-.08-.156-.056-.28.052-.388zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6C6.48 21.6 2.4 17.52 2.4 12S6.48 2.4 12 2.4 21.6 6.48 21.6 12 17.52 21.6 12 21.6z"/></svg>
+            <span data-i18n="books.buyButton">Buy on Amazon</span>
+          </a>
+        </div>
+      </article>
+
+    </div><!-- /books-grid -->
   </section>
 
   <!-- ── Footer ── -->
