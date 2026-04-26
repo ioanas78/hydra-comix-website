@@ -220,11 +220,11 @@ a { color: inherit; text-decoration: none; }
 .hero {
   display: grid;
   grid-template-columns: 1fr 380px;
-  min-height: 420px;
+  min-height: 240px;
 }
 
 .hero-left {
-  padding: 56px 48px;
+  padding: 20px 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -685,7 +685,7 @@ a { color: inherit; text-decoration: none; }
   }
   .hamburger { display: flex; }
   .lang-dropdown { display: none; }
-  .hero-left { padding: 40px 20px; }
+  .hero-left { padding: 16px 20px; }
   .books-section { padding: 32px 20px; }
   .books-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
 
