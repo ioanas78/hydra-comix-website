@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ioanas78.github.io/hydra-comix-website/sitemap.xml

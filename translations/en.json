@@ -6,8 +6,12 @@
   },
   "hero": {
     "title": "HydraComix",
-    "subtitle": "Comics by a kid, for kids",
+    "subtitle": "Children's comic books — written by a kid, for kids",
     "cta": "Explore the Collection"
+  },
+  "gift": {
+    "title": "The Perfect Gift for Young Readers",
+    "text": "Looking for a gift idea for children? Country Balls comic books are a hit with boys and girls aged 6–12 — fun, colourful kids books made by a kid who loves comics just like them. A present idea that children actually want to read."
   },
   "books": {
     "sectionTitle": "The Collection",
@@ -17,7 +21,11 @@
   },
   "about": {
     "title": "About the Author",
-    "subtitle": "The mind behind Country Balls"
+    "subtitle": "The mind behind Country Balls",
+    "storyTitle": "The Country Balls Story",
+    "whyTitle": "Why Kids Love It",
+    "giftTitle": "A Gift Kids Actually Want",
+    "giftText": "Looking for a present idea for children? Whether you need gift ideas for boys or gift ideas for girls, the Country Balls children's comic books are a hit with young readers aged 6–12 — bold colours, short stories, and adventures kids can actually relate to."
   },
   "goldenEra": {
     "title": "Country Balls Golden Era",
