@@ -12,10 +12,15 @@
   <meta property="og:title" content="About David Alexandru — Author of HydraComix Children's Comic Books" />
   <meta property="og:description" content="Meet David Alexandru, the young creator of the Country Balls children's comic book series — a unique gift idea for kids who love adventure and humour." />
   <meta property="og:url" content="https://ioanas78.github.io/hydra-comix-website/about.html" />
-  <meta property="og:image" content="https://ioanas78.github.io/hydra-comix-website/front%20covers/CountryBalls%20Golden%20Era%20-%20front%20cover.png" />
+  <meta property="og:image" content="https://ioanas78.github.io/hydra-comix-website/assets/images/social/hydracomix-og.jpg" />
+  <meta property="og:image:alt" content="HydraComix Country Balls comic books by David Alexandru" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="About David Alexandru — Author of HydraComix Children's Comic Books" />
+  <meta name="twitter:description" content="Meet David Alexandru, the young creator of the Country Balls children's comic book series — a unique gift idea for kids who love adventure and humour." />
+  <meta name="twitter:image" content="https://ioanas78.github.io/hydra-comix-website/assets/images/social/hydracomix-og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <!-- JSON-LD: Person -->
   <script type="application/ld+json">
   {
@@ -28,6 +33,27 @@
     "url": "https://ioanas78.github.io/hydra-comix-website/about.html"
   }
   </script>
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "HydraComix",
+        "item": "https://ioanas78.github.io/hydra-comix-website/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About David Alexandru",
+        "item": "https://ioanas78.github.io/hydra-comix-website/about.html"
+      }
+    ]
+  }
+  </script>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -35,7 +61,7 @@
   <!-- ── Navbar ── -->
   <nav class="navbar">
     <a class="nav-brand" href="index.html">
-      <img src="HydraComix-logo.jpg" alt="HydraComix logo" class="nav-brand-logo" />
+      <img src="assets/images/hydracomix-logo.jpg" alt="HydraComix logo" class="nav-brand-logo" />
       Hydra<span>Comix</span>
     </a>
 
@@ -47,19 +73,19 @@
 
     <!-- Language dropdown -->
     <div class="lang-dropdown">
-      <button class="lang-btn" onclick="toggleLangDropdown()" aria-label="Select language">
+      <button class="lang-btn" type="button" aria-label="Select language" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-menu">
         <span id="lang-btn-label">🇬🇧 English</span>
         <span class="chevron">▼</span>
       </button>
-      <div class="lang-menu" role="listbox">
-        <div class="lang-option active" data-lang="en" role="option">🇬🇧 English</div>
-        <div class="lang-option coming-soon" data-lang="fr" role="option">🇫🇷 Français <span class="coming-soon-tag" data-i18n="lang.comingSoon">soon</span></div>
-        <div class="lang-option coming-soon" data-lang="de" role="option">🇩🇪 Deutsch <span class="coming-soon-tag" data-i18n="lang.comingSoon">soon</span></div>
-        <div class="lang-option coming-soon" data-lang="ro" role="option">🇷🇴 Română <span class="coming-soon-tag" data-i18n="lang.comingSoon">soon</span></div>
+      <div class="lang-menu" id="lang-menu" role="listbox" aria-label="Language options">
+        <button class="lang-option active" type="button" data-lang="en" role="option" aria-selected="true">🇬🇧 English</button>
+        <button class="lang-option coming-soon" type="button" data-lang="fr" role="option" aria-selected="false" disabled>🇫🇷 Français <span class="coming-soon-tag" data-i18n="lang.comingSoon">soon</span></button>
+        <button class="lang-option coming-soon" type="button" data-lang="de" role="option" aria-selected="false" disabled>🇩🇪 Deutsch <span class="coming-soon-tag" data-i18n="lang.comingSoon">soon</span></button>
+        <button class="lang-option coming-soon" type="button" data-lang="ro" role="option" aria-selected="false" disabled>🇷🇴 Română <span class="coming-soon-tag" data-i18n="lang.comingSoon">soon</span></button>
       </div>
     </div>
 
-    <button class="hamburger" onclick="toggleMobileNav()" aria-label="Toggle menu">
+    <button class="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
       <span></span><span></span><span></span>
     </button>
   </nav>
@@ -119,7 +145,7 @@
     </div>
 
     <!-- Back to books -->
-    <div style="text-align:center; margin-top:48px;">
+    <div class="about-cta">
       <a href="index.html#books" class="btn btn-primary">See the Books</a>
     </div>
 

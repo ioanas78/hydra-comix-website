@@ -9,11 +9,11 @@
 /* ── Design Tokens (Pop Art Blast) ── */
 :root {
   --yellow:         #ffe500;
-  --pink:           #ff3366;
+  --pink:           #cc1748;
   --black:          #000000;
   --white:          #ffffff;
   --gray-text:      #444444;
-  --gray-light:     #666666;
+  --gray-light:     #9a9a9a;
 
   --font-display:   'Black Ops One', cursive;
   --font-body:      'Nunito', sans-serif;
@@ -22,8 +22,8 @@
   --shadow-sm:      2px 2px 0 #000;
   --shadow-md:      5px 5px 0 #000;
   --shadow-lg:      7px 7px 0 #000;
-  --shadow-pink:    5px 5px 0 #ff3366;
-  --shadow-pink-lg: 7px 7px 0 #ff3366;
+  --shadow-pink:    5px 5px 0 var(--pink);
+  --shadow-pink-lg: 7px 7px 0 var(--pink);
 
   --nav-h:          68px;
   --radius:         0px;
@@ -63,6 +63,12 @@ body.page-dark {
 
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
+}
 
 /* ── Navbar ── */
 .navbar {
@@ -172,9 +178,14 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   align-items: center;
   gap: 10px;
+  width: 100%;
+  border: 0;
+  background: transparent;
   padding: 10px 16px;
   font-size: 0.9rem;
   font-weight: 600;
+  font-family: var(--font-body);
+  text-align: left;
   cursor: pointer;
   color: var(--white);
   transition: background 0.15s;
@@ -363,6 +374,30 @@ a { color: inherit; text-decoration: none; }
   font-weight: 700;
 }
 
+/* Intro copy for search and readers */
+.series-intro {
+  background: var(--white);
+  border-top: 5px solid var(--black);
+  padding: 44px 48px;
+}
+
+.series-intro h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  margin: 0 auto 16px;
+  max-width: 900px;
+  color: var(--black);
+}
+
+.series-intro p {
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--gray-text);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
 /* ── Books Section ── */
 .books-section {
   background: var(--white);
@@ -497,6 +532,58 @@ a { color: inherit; text-decoration: none; }
   box-shadow: 3px 3px 0 var(--black);
 }
 .btn-amazon svg { width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
+
+.btn-amazon-large {
+  font-size: 1.2rem;
+  padding: 14px 32px;
+}
+
+.btn-amazon-inline {
+  display: inline-flex;
+  padding-inline: 36px;
+}
+
+.amazon-icon-large {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+/* FAQ */
+.faq-section {
+  background: var(--white);
+  border-top: 5px solid var(--black);
+  padding: 56px 48px 64px;
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+
+.faq-item {
+  border: var(--border-width) solid var(--black);
+  box-shadow: var(--shadow-md);
+  padding: 20px;
+  background: var(--yellow);
+}
+
+.faq-item h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  color: var(--black);
+}
+
+.faq-item p {
+  color: var(--gray-text);
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.55;
+}
 
 /* ── Footer ── */
 .footer {
@@ -645,6 +732,11 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 5px solid var(--black);
 }
 
+.video-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .section-title {
   font-family: var(--font-display);
   font-size: clamp(2rem, 5vw, 3.2rem);
@@ -693,6 +785,14 @@ a { color: inherit; text-decoration: none; }
 
 .peek-stack img { width: 100%; display: block; }
 
+.centered-cta,
+.about-cta {
+  text-align: center;
+}
+
+.centered-cta { margin-top: 56px; }
+.about-cta { margin-top: 48px; }
+
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
@@ -723,6 +823,7 @@ a { color: inherit; text-decoration: none; }
   .hamburger { display: flex; }
   .lang-dropdown { display: none; }
   .hero-left { padding: 16px 20px; }
+  .series-intro { padding: 36px 20px; }
   .books-section { padding: 32px 20px; }
   .books-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
 
@@ -736,6 +837,7 @@ a { color: inherit; text-decoration: none; }
   .about-text-box { padding: 24px; }
   .video-section { padding: 48px 20px; }
   .chapters-section { padding: 48px 20px; }
+  .faq-section { padding: 44px 20px 52px; }
 }
 
 @media (max-width: 480px) {
