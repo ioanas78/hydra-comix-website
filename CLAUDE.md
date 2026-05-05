@@ -4,7 +4,7 @@
 
 A static website for **HydraComix** — a children's comic book series by David Alexandru (ages 8–17). Five books in the *Country Balls* series, sold exclusively on Amazon UK. No backend, no build step.
 
-Live URL: https://ioanas78.github.io/hydra-comix-website/
+Live URL: https://www.hydra-comix.com
 GitHub: https://github.com/ioanas78/hydra-comix-website
 
 ## Running locally
