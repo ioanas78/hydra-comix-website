@@ -2,7 +2,7 @@
 
 ## What this project is
 
-A static website for **HydraComix** — a children's comic book series by David Alexandru (ages 8–17). Five books in the *Country Balls* series, sold on Amazon UK. No backend, no build step.
+A static website for **HydraComix** — a children's comic book series by David Alexandru (ages 8–17). Five comic books in the *Country Balls* series plus a *Country Balls* coloring book, sold on Amazon UK. No backend, no build step.
 
 Live URL: https://www.hydra-comix.com
 GitHub: https://github.com/ioanas78/hydra-comix-website
@@ -81,7 +81,7 @@ All three pages include:
 - Canonical URLs pointing to `https://www.hydra-comix.com`
 - Open Graph and Twitter Card meta tags
 - JSON-LD structured data:
-  - `index.html`: `Organization`, `ItemList` (5 books), `FAQPage`
+  - `index.html`: `Organization`, `ItemList` (6 books), `FAQPage`
   - `golden-era.html`: `Book`, `VideoObject`, `BreadcrumbList`
   - `about.html`: `Person` (with `sameAs` → Author Central), `BreadcrumbList`
 - `robots.txt` and `sitemap.xml` live at the domain root
@@ -98,6 +98,7 @@ All buy buttons use `https://www.amazon.co.uk/dp/<ASIN>` (primary audience is UK
 | Country Balls Heroes | B0DWKBCD7X |
 | Country Balls Golden Era | B0DZVQ4DCX |
 | Country Balls Mania | B0GJPTJBG5 |
+| Colour the World: A Countryball Adventure (coloring book) | B0H75TLTLW |
 
 ## Known placeholders / open tasks
 
